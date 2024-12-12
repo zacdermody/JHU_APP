@@ -1,0 +1,62 @@
+.legacy-schedule-page {
+  padding: 20px;
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+.legacy-schedule-table {
+  border: 1px solid #ddd; 
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.date-col-header, .resident-header {
+  background-color: #002D62; /* Dark Blue */
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center; 
+}
+
+.resident-header {
+  text-align: left;
+}
+
+.date-cell {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.resident-name-cell {
+  background-color: #e6f2fa; /* Light Blue */
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.assignment-cell {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.legacy-schedule-table tbody tr:nth-child(even) .resident-name-cell {
+  background-color: #fff; 
+}
+
+.legacy-schedule-table tbody tr:nth-child(even) .assignment-cell {
+  background-color: #e6f2fa; 
+}
+
+.legacy-schedule-table tbody tr:hover td {
+  background-color: #d0e4f2;
+}
+
+/* Optional: Add hover effect to resident names */
+.resident-header:hover {
+  background-color: #003b73; /* Slightly darker blue */
+  cursor: pointer;
+}

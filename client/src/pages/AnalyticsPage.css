@@ -1,0 +1,58 @@
+.analytics-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+  }
+  
+  .analytics-page h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .analytics-page p {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .analytics-table-container {
+    overflow-x: auto; /* In case it gets wide */
+    background: #f5f5f5;
+    padding: 10px;
+  }
+  
+  .analytics-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .analytics-table th,
+  .analytics-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .analytics-table thead th {
+    background-color: #002f5f; /* A dark navy blue similar to the image */
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .assignment-name-cell {
+    text-align: left;
+    font-weight: bold;
+    background-color: #e6e6e6; /* Light gray for the first column */
+  }
+  
+  .analytics-table tbody tr:nth-child(even) {
+    background: #d9eaff; /* Light blue inspired by the schedule screenshot */
+  }
+  
+  .analytics-table tbody tr:nth-child(odd) {
+    background: #e6f0ff; /* Another subtle light blue variant */
+  }
+  

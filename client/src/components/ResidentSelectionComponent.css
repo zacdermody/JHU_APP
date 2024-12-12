@@ -1,0 +1,45 @@
+/* Resident selection container styling */
+.resident-selection-container {
+  margin: 20px 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #e3f2fd; /* Light blue background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the dropdown container */
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Label for the dropdown */
+.resident-selection-container label {
+  font-size: 18px;
+  color: #333;
+  margin-right: 10px;
+}
+
+/* Dropdown styling */
+.resident-selection-container select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+  width: 250px; /* Set width of dropdown */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effect */
+}
+
+/* Focus effect for the dropdown */
+.resident-selection-container select:focus {
+  border-color: #64b5f6; /* Light blue border on focus */
+  box-shadow: 0 0 5px rgba(100, 181, 246, 0.5); /* Light blue shadow effect on focus */
+}
+
+/* Optional: Centering the dropdown in smaller screens */
+@media (max-width: 600px) {
+  .resident-selection-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

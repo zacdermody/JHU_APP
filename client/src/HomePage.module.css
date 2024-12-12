@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
+:global(body),
+:global(html) {
+  margin: 0;
+  padding: 0;
+}
+
+.homePage {
+  font-family: "EB Garamond", serif;
+  color: #ffe8a1; 
+}
+
+.textStrongGold {
+  color: #d4b920; 
+}
+
+.fontEbGaramond {
+  font-family: 'EB Garamond', serif;
+}
+
+.bgBlack {
+  background-color: #000000;
+}
+
+.textGold {
+  color: #ffe8a1;
+}

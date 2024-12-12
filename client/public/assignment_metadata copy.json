@@ -1,0 +1,324 @@
+{
+    "Lahey Jr": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Psych-Add": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Psych-Cons": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Tufts Jr": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Lahey Sr": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Clinic-L": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "EMG": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Peds IP": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "NCCU": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "T-Cons": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Peds OP": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "EEG": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Orientation": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "L-Cons Sr": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Tufts Sr": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Clinic": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Vacation": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "NF-L": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "L-Cons Jr": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "NF-T": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "NCCU-S": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Elective": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    },
+    "Peds-NCCU": {
+        "Time": "9-5",
+        "Location": "North Building",
+        "Head_Teacher": "Mr. Smith",
+        "DailyTimes": {
+            "Monday": { "start": "09:00", "end": "17:00" },
+            "Tuesday": { "start": "09:00", "end": "17:00" },
+            "Wednesday": { "start": "09:00", "end": "17:00" },
+            "Thursday": { "start": "09:00", "end": "17:00" },
+            "Friday": { "start": "09:00", "end": "17:00" },
+            "Saturday": { "start": "09:00", "end": "17:00" }
+        }
+
+    }
+}

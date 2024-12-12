@@ -1,0 +1,185 @@
+:root {
+  --dark-blue: #002D72; /* Hopkins Dark Blue */
+  --light-blue: #DCE6F1; /* Hopkins Light Blue */
+  --text-color: #595A5C; /* Gray text */
+  --header-text-color: white; /* White text for headers */
+  --hover-blue: #003A99; /* Slightly darker blue for hover */
+}
+
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Darken the background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content input {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid var(--light-blue);
+  border-radius: 4px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  background-color: var(--dark-blue); /* Save button dark blue */
+  color: var(--header-text-color);
+}
+
+.modal-buttons button:last-child {
+  background-color: #dc3545; /* Cancel button red */
+  color: white;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* Main table styles */
+.schedule-table {
+  width: 100%; /* Ensure the table takes up the full width */
+  max-width: 1200px; /* Set a max width to prevent overflow */
+  border-collapse: collapse;
+  background-color: var(--light-blue); /* Light blue background */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the table horizontally */
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+/* Table container */
+.table-container {
+  max-width: 100%;
+  overflow-x: auto; /* Enable scrolling if the table overflows horizontally */
+  padding-left: 0; /* Remove any left padding */
+  padding-right: 0; /* Remove any right padding */
+}
+
+/* Table header styling */
+.schedule-table thead th {
+  background-color: var(--dark-blue); /* Hopkins Dark Blue */
+  color: var(--header-text-color); /* White text in the header */
+  font-size: 16px;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 3px solid var(--light-blue); /* Light blue as the border */
+  min-width: 120px;
+}
+
+/* Table body cells */
+.schedule-table tbody td {
+  padding: 6px;
+  text-align: center;
+  border: 1px solid var(--light-blue); /* Light blue border */
+  color: var(--text-color); /* Gray text for content */
+  white-space: nowrap;
+  min-width: 120px;
+}
+
+/* Alternating row colors for better readability */
+.schedule-table tbody tr:nth-child(odd) {
+  background-color: #FFFFFF; /* White background for odd rows */
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background-color: var(--light-blue); /* Light blue background for even rows */
+}
+
+/* Hover effect */
+.schedule-table tbody td:hover {
+  background-color: var(--hover-blue); /* Slightly darker blue on hover */
+  color: white; /* White text on hover */
+}
+
+/* Pagination button styling */
+.pagination-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pagination-button {
+  background-color: var(--dark-blue); /* Dark Blue for buttons */
+  color: var(--header-text-color); /* White text for buttons */
+  border: 1px solid var(--light-blue); /* Light blue for the border */
+  padding: 8px 16px;
+  margin: 0 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-button:disabled {
+  background-color: var(--light-blue); /* Disabled button is light blue */
+  color: var(--text-color); /* Gray text for disabled */
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 16px;
+  color: var(--dark-blue); /* Dark Blue text */
+}
+
+/* Filter Input Styling */
+.filter-container {
+  margin-bottom: 20px; /* Add space below the filter */
+  text-align: center;
+}
+
+.filter-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--dark-blue); /* Dark blue border */
+  border-radius: 4px;
+  width: 50%; /* Centered, taking up half the width */
+  background-color: #FFFFFF; /* White background */
+  color: var(--text-color); /* Gray text */
+}
+
+.filter-input:focus {
+  outline: none;
+  border-color: var(--hover-blue); /* Slightly darker blue focus */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+.heading {
+  color: var(--dark-blue); /* Hopkins Dark Blue */
+  font-size: 32px; /* Adjust font size as needed */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: var(--dark-blue); /* Hopkins Dark Blue */
+  font-size: 18px; /* Slightly smaller than the main heading */
+  text-align: center;
+  margin-bottom: 20px;
+}

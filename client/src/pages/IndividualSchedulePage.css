@@ -1,0 +1,34 @@
+/* IndividualSchedulePage.css */
+
+/* Increase width of calendar container to fill more of the screen */
+.calendar-container {
+    width: 90%; /* Adjust to occupy more screen space */
+    max-width: none; /* Remove the max-width restriction */
+    margin: 0 auto;
+  }
+  
+  /* Make the FullCalendar height more flexible */
+  .fc {
+    height: auto; /* Allow calendar to expand vertically */
+  }
+  
+  /* Center and expand each event box */
+  .fc-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 4px; /* Add some padding for better readability */
+  }
+  
+  .event-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  

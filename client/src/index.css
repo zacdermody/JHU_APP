@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dynamic Color Variables */
+:root {
+  --background-color: #FFFFFF; /* Default white */
+  --text-color: '#000000';
+  --button-color: #002D72; /* Default Hopkins Dark Blue */
+  --button-hover-color: #001b4f; /* Default darker blue */
+  --table-header-color: #002D72; /* Default Hopkins Dark Blue */
+  --table-row-color: #FFFFFF; /* Default white */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--background-color); /* Use dynamic background color */
+  color: var(--text-color); /* Use dynamic text color */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: var(--button-color); /* Dynamic button color */
+  color: var(--text-color); /* Dynamic text color */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-color); /* Dynamic hover color */
+}
+
+.table th {
+  background-color: var(--table-header-color); /* Dynamic table header color */
+  color: var(--text-color); /* Dynamic text color */
+}
+
+.table td {
+  background-color: var(--table-row-color); /* Dynamic table row color */
+  color: var(--text-color); /* Dynamic text color */
+}

@@ -1,0 +1,61 @@
+.resident-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.resident-details {
+  background: white;
+  padding: 20px 40px; /* Increased padding for a larger card */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 320px; /* Increased width */
+  max-width: 90%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 10px; /* Add spacing between the buttons */
+}
+
+.button {
+  padding: 8px 16px; /* Reduced padding for a slimmer button */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  font-weight: bold;
+  color: white;
+  background-color: #3172AE;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline for link */
+}
+
+.button:hover {
+  background-color: #265a8b;
+}
+
+
+.individual-schedule-button {
+  background-color: #3172AE; /* Set the same color for Individual Schedule button */
+}

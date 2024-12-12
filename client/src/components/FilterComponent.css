@@ -1,0 +1,20 @@
+.filter-container {
+  margin-bottom: 20px; /* Add space below the filter */
+  text-align: center;
+}
+
+.filter-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #AD5C3F; /* Tufts Brown border */
+  border-radius: 4px;
+  width: 50%; /* Centered, taking up half the width */
+  background-color: #FFFFFF; /* White background */
+  color: #595A5C; /* Gray text */
+}
+
+.filter-input:focus {
+  outline: none;
+  border-color: #3E77B7; /* Tufts Blue focus */
+  box-shadow: 0 0 5px rgba(62, 119, 183, 0.5);
+}

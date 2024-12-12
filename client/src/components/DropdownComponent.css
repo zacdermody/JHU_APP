@@ -1,0 +1,53 @@
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  width: 100%; /* Ensure the dropdown takes full width */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #AD5C3F; /* Tufts Brown border */
+  border-radius: 4px;
+  background-color: #FFFFFF; /* White background */
+  color: #595A5C; /* Gray text */
+  z-index: 9999; /* Ensure the dropdown is on top of other elements */
+}
+
+
+.dropdown:focus {
+  outline: none;
+  border-color: #3E77B7; /* Tufts Blue on focus */
+  box-shadow: 0 0 5px rgba(62, 119, 183, 0.5); /* Blue shadow */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Position it below the dropdown */
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #AD5C3F;
+  border-radius: 4px;
+}
+.dropdown-container {
+  overflow: visible; /* Ensure dropdown can expand outside of parent */
+}
+/* Style the dropdown arrow */
+.dropdown-arrow {
+  content: '';
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(45deg);
+  right: 10px;
+  top: -2px;
+}
+
+/* Dropdown options */
+.dropdown option {
+  padding: 10px;
+  background-color: #fff;
+  font-size: 16px;
+}
