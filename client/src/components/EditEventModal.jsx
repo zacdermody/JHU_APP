@@ -80,13 +80,13 @@ const EditEventModal = ({ event, isOpen, onClose, onSave }) => {
         </div>
 
         <div className="mb-4">
-          <label className="block font-semibold mb-1">Head Teacher:</label>
+          <label className="block font-semibold mb-1">Supervisor:</label>
           <input
             type="text"
             value={editableHeadTeacher}
             onChange={(e) => setEditableHeadTeacher(e.target.value)}
             className="border rounded p-2 w-full"
-            placeholder="Head Teacher"
+            placeholder="Supervisor"
           />
         </div>
 
