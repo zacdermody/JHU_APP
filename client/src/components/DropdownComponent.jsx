@@ -7,7 +7,7 @@ const DropdownComponent = ({ selectedValue, onChange }) => {
     'CCU',
 'SICU','Back Up','BV',
 'Electives',
-'Vacatation',
+'Vacation',
 'Nights',
 'Off',
 'NP',
