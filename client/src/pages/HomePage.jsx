@@ -22,12 +22,12 @@ function HomePage() {
         {/* Main Title */}
         <div className="text-xl italic font-serif flex flex-col items-center space-y-2 md:flex-row md:space-x-4 md:space-y-0">
           <span className={`${config.titleColor}`}>Welcome to</span>
-          <span className={`text-2xl ${config.titleStrongColor}`}>Scheduling Wizard in conjugation with JHU Pava center</span>
+          <span className={`text-2xl ${config.titleStrongColor}`}>Johns Hopkins Fellowship Schedule Manager</span>
         </div>
 
         {/* Program Indicator */}
         <p className="text-base mt-4 italic text-gray-300 font-serif">
-          Exclusively for the <span className="font-semibold">{config.programName}</span>
+          Created by <span className="font-semibold">{config.programName}</span>
         </p>
 
         {/* Description */}

@@ -8,7 +8,7 @@ const schoolConfig = {
         primaryColor: 'bg-[#002D72]', // Johns Hopkins Blue background
         buttonPrimary: 'bg-[#0072CE] hover:bg-[#0056a8]', // Button primary: lighter Hopkins blue
         buttonSecondary: 'bg-[#8E9FBB] hover:bg-[#5E729A]', // Button secondary: soft gray-blue
-        programName: 'Johns Hopkins Residency Program',
+        programName: 'Scheduling Wizard',
 
         titleColor: 'text-white', // White text for titles
         titleStrongColor: 'text-[#8E9FBB]', // Strong text in gray-blue accent
