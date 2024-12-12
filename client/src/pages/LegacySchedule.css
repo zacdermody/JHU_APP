@@ -1,62 +1,85 @@
 .legacy-schedule-page {
   padding: 20px;
-  background-color: #f4f4f4; /* Light gray background */
-}
-
-.legacy-schedule-table {
-  border: 1px solid #ddd; 
-  border-collapse: collapse;
-  width: 100%;
+  background-color: var(--light-blue); /* Use the same light blue background as the first file */
   font-family: Arial, sans-serif;
 }
 
-.date-col-header, .resident-header {
-  background-color: #002D62; /* Dark Blue */
-  color: #fff;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center; 
+/* Make the table styling similar to the first file’s .schedule-table */
+.legacy-schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--light-blue); /* Light blue background */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the table horizontally */
+  overflow-x: auto;
+  font-size: 14px;
 }
 
+/* Header cells */
+.date-col-header,
+.resident-header {
+  background-color: var(--dark-blue); /* Hopkins Dark Blue */
+  color: var(--header-text-color); /* White text */
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 3px solid var(--light-blue);
+}
+
+/* Resident headers centered */
 .resident-header {
   text-align: center;
 }
 
+/* Date cells - permanently dark blue with white text, no hover change */
 .date-cell {
   padding: 10px;
-  border: 1px solid #ddd;
   text-align: center;
-}
-
-.resident-name-cell {
-  background-color: #e6f2fa; /* Light Blue */
-  font-weight: bold;
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: left;
+  border: 1px solid var(--light-blue);
+  background-color: var(--dark-blue); 
+  color: var(--header-text-color); /* White text */
   white-space: nowrap;
 }
 
+/* Resident name cells */
+.resident-name-cell {
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid var(--light-blue);
+  text-align: left;
+  white-space: nowrap;
+  color: var(--text-color); /* Gray text */
+}
+
+/* Assignment cells */
 .assignment-cell {
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--light-blue);
   text-align: center;
+  color: var(--text-color); /* Gray text */
 }
 
-.legacy-schedule-table tbody tr:nth-child(even) .resident-name-cell {
-  background-color: #fff; 
+/* Alternate row coloring */
+.legacy-schedule-table tbody tr:nth-child(odd) .resident-name-cell,
+.legacy-schedule-table tbody tr:nth-child(odd) .assignment-cell {
+  background-color: #FFFFFF; /* White for odd rows */
 }
 
+.legacy-schedule-table tbody tr:nth-child(even) .resident-name-cell,
 .legacy-schedule-table tbody tr:nth-child(even) .assignment-cell {
-  background-color: #e6f2fa; 
+  background-color: var(--light-blue); /* Light blue for even rows */
 }
 
-.legacy-schedule-table tbody tr:hover td {
-  background-color: #d0e4f2;
+/* Hover effect for non-date cells */
+.legacy-schedule-table tbody tr:hover td:not(.date-cell) {
+  background-color: var(--hover-blue);
+  color: var(--header-text-color); /* White text on hover */
 }
 
-/* Optional: Add hover effect to resident names */
+/* The date cells will not change on hover due to the :not(.date-cell) selector above */
+
+/* Optional: Add hover effect to resident headers */
 .resident-header:hover {
-  background-color: #003b73; /* Slightly darker blue */
+  background-color: var(--hover-blue); /* Slightly darker blue on hover */
   cursor: pointer;
 }
