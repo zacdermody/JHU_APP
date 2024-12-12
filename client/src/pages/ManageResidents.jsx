@@ -2,21 +2,16 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { FaEdit, FaTrash } from 'react-icons/fa';
+import { FaTrash } from 'react-icons/fa';
 import themeConfig from '../config/themeConfig';
 
 const ManageResidents = () => {
   const [rows, setRows] = useState([]);
   const [filteredRows, setFilteredRows] = useState([]);
-  const [filters, setFilters] = useState({ name: '', year: '', email: '', created_account: '', submitted_form: '' });
+  const [filters, setFilters] = useState({ name: '', year: '', email: '' });
   const [newResName, setNewResName] = useState('');
   const [newResYear, setNewResYear] = useState('');
   const [newResEmail, setNewResEmail] = useState('');
-  const [isFinal, setIsFinal] = useState(false);
-  const [editMode, setEditMode] = useState(null);
-  const [editedName, setEditedName] = useState('');
-  const [editedYear, setEditedYear] = useState('');
-  const [editedEmail, setEditedEmail] = useState('');
 
   useEffect(() => {
     Object.keys(themeConfig).forEach((key) => {
@@ -25,18 +20,31 @@ const ManageResidents = () => {
     fetchResidents();
   }, []);
 
+  useEffect(() => {
+    applyFilters();
+  }, [rows, filters]);
+
   const fetchResidents = async () => {
     try {
       const response = await axios.get('http://127.0.0.1:5000/api/residents', {
         withCredentials: true,
       });
-      console.log('Fetched residents:', response.data);
       setRows(response.data);
-      setFilteredRows(response.data);
     } catch (error) {
       console.error('Error fetching residents:', error);
       toast.error('Failed to fetch residents');
     }
+  };
+
+  const applyFilters = () => {
+    const filtered = rows.filter((row) => {
+      return (
+        (!filters.name || row.name.toLowerCase().includes(filters.name.toLowerCase())) &&
+        (!filters.year || row.year.toLowerCase().includes(filters.year.toLowerCase())) &&
+        (!filters.email || row.email.toLowerCase().includes(filters.email.toLowerCase()))
+      );
+    });
+    setFilteredRows(filtered);
   };
 
   const addResident = async () => {
@@ -52,23 +60,14 @@ const ManageResidents = () => {
         email: newResEmail,
       };
 
-      // Add the resident via API
-      const response = await axios.post('http://127.0.0.1:5000/api/residents', newResident, {
+      await axios.post('http://127.0.0.1:5000/api/residents', newResident, {
         withCredentials: true,
       });
 
-      const addedResident = response.data;
-
-      // Update state with the new resident
-      setRows((prevRows) => [...prevRows, addedResident]);
-      setFilteredRows((prevFilteredRows) => [...prevFilteredRows, addedResident]);
-
-      // Clear input fields
-      setNewResName('');
-      setNewResYear('');
-      setNewResEmail('');
-
       toast.success('Resident added successfully!');
+      
+      // Force a full page refresh to ensure the new resident is visible immediately
+      window.location.reload();
     } catch (error) {
       console.error('Error adding resident:', error);
       toast.error('Failed to add resident');
@@ -76,7 +75,6 @@ const ManageResidents = () => {
   };
 
   const deleteResidentByEmail = async (email) => {
-    console.log('Deleting resident with email:', email);
     if (!email) {
       toast.error('Unable to delete: Resident email is missing');
       return;
@@ -88,8 +86,6 @@ const ManageResidents = () => {
       });
 
       setRows((prevRows) => prevRows.filter((row) => row.email !== email));
-      setFilteredRows((prevFilteredRows) => prevFilteredRows.filter((row) => row.email !== email));
-
       toast.success('Resident deleted successfully!');
     } catch (error) {
       console.error('Error deleting resident by email:', error);
@@ -98,8 +94,7 @@ const ManageResidents = () => {
   };
 
   const clearFilter = () => {
-    setFilters({ name: '', year: '', email: '', created_account: '', submitted_form: '' });
-    setFilteredRows(rows);
+    setFilters({ name: '', year: '', email: '' });
   };
 
   return (
@@ -149,7 +144,7 @@ const ManageResidents = () => {
           </thead>
           <tbody>
             {filteredRows.map((row) => (
-              <tr key={row.email} className="hover:bg-blue-400 transition duration-300">
+              <tr key={row.email} className="hover:bg-blue-400 transition duration-300 text-black">
                 <td className="px-4 py-2">{row.name}</td>
                 <td className="px-4 py-2">{row.year}</td>
                 <td className="px-4 py-2">{row.email}</td>
@@ -163,6 +158,13 @@ const ManageResidents = () => {
                 </td>
               </tr>
             ))}
+            {filteredRows.length === 0 && (
+              <tr>
+                <td colSpan="4" className="text-center text-black py-4">
+                  No residents found.
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
